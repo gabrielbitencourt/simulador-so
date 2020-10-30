@@ -1,10 +1,13 @@
 .PHONY: clean all
 
-all: escalonador
-	./escalonador
+simulador: main.c cpu.c process.c
+	gcc -Wall main.c cpu.c process.c -o simulador
 
-escalonador: escalonador.c
-	gcc -Wall escalonador.c -o escalonador
+run: simulador
+	./simulador
+
+debug: main.c cpu.c process.c
+	gcc -g main.c cpu.c process.c -o main
 
 clean:
-	rm escalonador
+	rm simulador
