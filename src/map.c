@@ -11,10 +11,6 @@ extern FILE *output;
 Map *init(int max_time, MapType type)
 {
     Map *map = malloc(sizeof(Map));
-    // if (type == PROCESS_M)
-    //     nprintf("Inicializando tabela de processos com %d espaços de tempo;\n", max_time);
-    // else
-    //     nprintf("\nInicializando tabela de I/O do processo");
 
     int *count;
     count = malloc(sizeof(int) * max_time);
@@ -49,17 +45,6 @@ void insert(Map *this, int time, void *value)
     }
     int old_time = this->count[time];
     this->count[time] = old_time + 1;
-
-    // if (this->type == PROCESS_M)
-    // {
-    //     Process *process = (Process *)value;
-    //     nprintf("Inserindo processo %s em t=%d com duração de %d;\n", process->name, time, process->length);
-    // }
-    // else
-    // {
-    //     IO *io = (IO *)value;
-    //     nprintf("\tInserindo I/O de %s em t=%d;\n", name(io->type), io->start);
-    // }
 
     if (this->values[time] == NULL)
     {

@@ -248,6 +248,6 @@ int main(int argc, char *argv[])
 
     nprintf("\nTodos os processos foram finalizados...\n");    
     fclose(args.output);
-    // free everything ;)
+    // free
     return 0;
 }

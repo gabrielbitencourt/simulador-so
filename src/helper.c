@@ -33,9 +33,3 @@ const char *_color(int bg, int fg, const char *s)
     sprintf(str, "\x1b[%d;%dm%s\x1b[0;0m", bg, fg, s);
     return str;
 }
-
-char *cutstr(char *str, int cap)
-{
-    str[cap] = '\0';
-    return str;
-}

@@ -4,4 +4,3 @@ typedef enum FG_COLOR { BLACK_FG = 30, RED_FG, GREEN_FG, YELLOW_FG, BLUE_FG, PIN
 void cprintf(BG_COLOR, FG_COLOR, const char*, ...);
 void nprintf(const char*, ...);
 const char *_color(int, int, const char*);
-char *cutstr(char*, int);

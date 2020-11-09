@@ -1,12 +1,3 @@
-typedef enum ProcessState
-{
-    NOT_STARTED = 1,
-    READY,
-    WAITING,
-    OCCUPIED,
-    FINISHED
-} ProcessState;
-
 typedef struct Process
 {
     char *name;
