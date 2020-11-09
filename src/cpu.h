@@ -13,7 +13,7 @@ typedef struct CPU {
 } CPU;
 
 void start(CPU*, int);
-CPUState tick(CPU*);
+void tick(CPU*);
 void new_process(CPU*, Process*);
 void execute(CPU*, Process*);
 

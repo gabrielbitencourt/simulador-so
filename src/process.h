@@ -14,6 +14,7 @@ typedef struct Process
     int start;
     int length;
     int processed;
+    int pid;
 } Process;
 
 Process *create(char*, int, int, int);

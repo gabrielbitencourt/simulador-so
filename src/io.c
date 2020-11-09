@@ -22,12 +22,33 @@ char *name(IOType type)
             name = "Disco";
             break;
         case TAPE:
-            name = malloc(sizeof(char) * strlen("Fita magnética"));
-            name = "Fita magnética";
+            name = malloc(sizeof(char) * strlen("Fita"));
+            name = "Fita";
             break;
         case PRINTER:
             name = malloc(sizeof(char) * strlen("Impressora"));
             name = "Impressora";
+            break;
+    }
+    return name;
+}
+
+char *abrv(IOType type)
+{
+    char *name;
+    switch (type)
+    {
+        case DISK:
+            name = malloc(sizeof(char) * strlen("Disco"));
+            name = "Disco";
+            break;
+        case TAPE:
+            name = malloc(sizeof(char) * strlen("Fita"));
+            name = "Fita";
+            break;
+        case PRINTER:
+            name = malloc(sizeof(char) * strlen("Impressora"));
+            name = "Impr.";
             break;
     }
     return name;

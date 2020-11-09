@@ -18,4 +18,5 @@ typedef struct IO
 } IO;
 
 char *name(IOType);
+char *abrv(IOType);
 IO *create_io(IOType, struct Process*, int);

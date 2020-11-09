@@ -3,8 +3,9 @@
 #include "map.h"
 #include "process.h"
 
-extern int quiet;
 extern FILE *output;
+
+static int pid = 100;
 
 Process *create(char *name, int start, int length, int ion)
 {
@@ -13,5 +14,7 @@ Process *create(char *name, int start, int length, int ion)
     p->start = start;
     p->length = length;
     p->processed = 0;
+    p->pid = pid + 1;
+    pid = pid + 1;
     return p;
 }

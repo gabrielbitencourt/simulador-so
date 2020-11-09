@@ -11,3 +11,4 @@ Queue *init_queue(int, QueueType);
 void push(Queue*, void*);
 void *pop(Queue*);
 void *current(Queue*);
+char *stringify_queue(Queue*);
