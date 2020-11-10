@@ -31,25 +31,7 @@ O simulador conta com alguns argumentos de execução para facilitar a simulaç�
 
 É recomendado utilizar o simulador pela primeira vez sem nenhum argumento para que se entenda melhor a entrada e a saída do programa. Quando o prgrama lê de `STDIN` são impressas na tela instruções do que deve ser fornecido em cada momento para montagem da tabela de processos e da tabela de I/O para cada processo.
 
-A entrada é lida na seguinte ordem:
-
-Número de processos a serem escalonados (x >= 0)
-
-Para cada processo n
-
-    Nome do processo n
-    
-    Tempo de início do processo n (0 <= x <= 200)
-    
-    Tempo de serviço do processo n (x >= 0)
-    
-    Número de I/Os do processo n (x >= 0)
-    
-    :Para cada operação de I/O m do processo n
-    
-        Momento da m-gésima operação de IO, em relação ao tempo de serviço do processo na CPU (1 <= x < tempo total de serviço do processo)
-        
-        Tipo da m-gésima I/O (1: Disco, 2: Fita Magnética, 3: Impressora)
+O programa lê o número de processos que serão executados e, para cada processo lê um nome, o tempo de início, o tempo de serviço e quantas operações de I/O serão realizadas. E, para cada operação de I/O, é lido em qual instante ela ocorre - em relação ao tempo de serviço do processo na CPU - e qual o seu tipo.
 
 
 ### Formato de saída do simulador
