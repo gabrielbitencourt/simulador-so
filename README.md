@@ -34,14 +34,23 @@ O simulador conta com alguns argumentos de execução para facilitar a simulaç�
 A entrada é lida na seguinte ordem:
 
 Número de processos a serem escalonados (x >= 0)
-:Para cada processo n
+
+Para cada processo n
+
     Nome do processo n
+    
     Tempo de início do processo n (0 <= x <= 200)
+    
     Tempo de serviço do processo n (x >= 0)
+    
     Número de I/Os do processo n (x >= 0)
+    
     :Para cada operação de I/O m do processo n
+    
         Momento da m-gésima operação de IO, em relação ao tempo de serviço do processo na CPU (1 <= x < tempo total de serviço do processo)
+        
         Tipo da m-gésima I/O (1: Disco, 2: Fita Magnética, 3: Impressora)
+
 
 ### Formato de saída do simulador
 
