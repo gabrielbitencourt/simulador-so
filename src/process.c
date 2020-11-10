@@ -15,6 +15,7 @@ Process *create(char *name, int start, int length, int ion)
     p->length = length;
     p->processed = 0;
     p->pid = pid + 1;
+    p->ppid = 1;
     pid = pid + 1;
     return p;
 }

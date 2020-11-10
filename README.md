@@ -1,7 +1,7 @@
 # Trabalho final - Banco de Dados PLE
 ## Simulador de escalonador de processos
 
-Esse README tem como finalidade explicar e exemplificar alguns dos pontos mais práticos do simulador. Para a descrição completa acesse o relatório do trabalho [aqui](https://google.com)
+Esse README tem como finalidade explicar e exemplificar alguns dos pontos mais práticos do simulador. Para a descrição completa acesse o relatório do trabalho [aqui](https://docs.google.com/document/d/1gABO4QzEpfpvpKrXuyFM65EGWOOAtwwMjshfHCgcttM/edit?usp=sharing).
 
 ### Requisitos para rodar o projeto
 
@@ -68,8 +68,11 @@ Processamento:
 A cada ciclo de processamento o processador simula algumas ações, são elas troca de contexto (caso necessário), execução do processo e execução de I/O.
 
 Note que a troca de contexto não conta como uma unidade de tempo de processamento, pois ela ocorre sempre antes da próxima execução. As condições para troca de contexto são::
-- 
-- 
+1. Se o processo em execução atual esgotou o tempo limite e há outro processo em qualquer fila;
+2. Se o processo em execução atual finalizou o processamento e há outro processo em qualquer fila;
+3. Se o processo em execução atualmente é da fila de baixa prioridade e há um  processo na fila de alta prioridade;
+4. Se não há processo em execução atualmente e há outro processo em qualquer fila.
+
 
 A execução de processo e execução de I/O são bem similares, ambas funcionam em filas (detalhadas a seguir) e a cada unidade de tempo é simulado o comportamento de um processo real que executa um número x de instruções. Quando um processo requisita uma operação de I/O no tempo t ele é alocado na fila da I/O e começará a processar essa operação a partir de t + 1 (caso a fila dessa I/O esteja livre). Esse tempo t conta como uma unidade de tempo alocada para a execução daquele processo.
 

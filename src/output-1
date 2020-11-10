@@ -1,0 +1,145 @@
+Nome do processo/IO   Tempo de inicio     Tempo de servico    
+A                     0                   3                   
+
+B                     1                   4                   
+Disco                 1                   5                   
+
+Iniciando simulação da CPU...
+
+Adicionando processo A a fila de alta prioridade no tick 0
+
+
+Estado da fila de alta prioridade : [A]
+
+
+TICK 0
+[Troca de Contexto]: Trocando para processo A de alta prioridade.
+[Fila de Processos]: Executando processo A, faltam 2 ticks para finalizar
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Adicionando processo B a fila de alta prioridade no tick 1
+
+
+Estado da fila de alta prioridade : [A, B]
+
+
+TICK 1
+[Fila de Processos]: Executando processo A, faltam 1 ticks para finalizar
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de alta prioridade : [A, B]
+
+
+TICK 2
+[Fila de Processos]: Executando último tick do processo A.
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de alta prioridade : [A, B]
+
+
+TICK 3
+[Troca de Contexto]: Processo A finalizado, trocando para processo B de alta prioridade.
+[Fila de Processos]: Executando processo B foi requisitado I/O de Disco
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de I/O Disco       : [B - Disco]
+
+
+TICK 4
+[Fila de Processos]: Filas de processos estão vazias.
+[Fila I/O de Disco]: Executando I/O de Disco do processo B, faltam 4 ticks para finalizar e voltar a fila de baixa prioridade.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de I/O Disco       : [B - Disco]
+
+
+TICK 5
+[Fila de Processos]: Filas de processos estão vazias.
+[Fila I/O de Disco]: Executando I/O de Disco do processo B, faltam 3 ticks para finalizar e voltar a fila de baixa prioridade.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de I/O Disco       : [B - Disco]
+
+
+TICK 6
+[Fila de Processos]: Filas de processos estão vazias.
+[Fila I/O de Disco]: Executando I/O de Disco do processo B, faltam 2 ticks para finalizar e voltar a fila de baixa prioridade.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de I/O Disco       : [B - Disco]
+
+
+TICK 7
+[Fila de Processos]: Filas de processos estão vazias.
+[Fila I/O de Disco]: Executando I/O de Disco do processo B, faltam 1 ticks para finalizar e voltar a fila de baixa prioridade.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de I/O Disco       : [B - Disco]
+
+
+TICK 8
+[Fila de Processos]: Filas de processos estão vazias.
+[Fila I/O de Disco]: I/O de Disco do processo B finalizou, movendo para fila de baixa prioridade.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de baixa prioridade: [B]
+
+
+TICK 9
+[Troca de Contexto]: Trocando para processo B de baixa prioridade.
+[Fila de Processos]: Executando processo B, faltam 2 ticks para finalizar
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de baixa prioridade: [B]
+
+
+TICK 10
+[Fila de Processos]: Executando processo B, faltam 1 ticks para finalizar
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de baixa prioridade: [B]
+
+
+TICK 11
+[Fila de Processos]: Executando último tick do processo B.
+[Fila I/O de Disco]: Fila de I/O de Disco está vazia.
+[Fila I/O de Fita ]: Fila de I/O de Fita está vazia.
+[Fila I/O de Impr.]: Fila de I/O de Impressora está vazia.
+
+
+Estado da fila de baixa prioridade: [B]
+
+
+TICK 12
+[Troca de Contexto]: Processo B finalizado
+[Todas as filas   ]: Não há processos em nenhuma fila, aguardando...
+
+Todos os processos foram finalizados...
